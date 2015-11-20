@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,0BAA2B;EACzB,QAAQ,EAAE,QAAQ;EAElB,mDAAyB;IACvB,QAAQ,EAAE,QAAQ;IAClB,QAAQ,EAAE,MAAM;IAEhB,6EAA0B;MACxB,QAAQ,EAAE,QAAQ;EAItB,mGAA8C;IAC5C,QAAQ,EAAE,QAAQ;IAClB,MAAM,EAAE,OAAO;IACf,mBAAmB,EAAE,IAAI;IACzB,gBAAgB,EAAE,IAAI;IACtB,eAAe,EAAE,IAAI;IAErB,qHAAW;MACT,OAAO,EAAE,GAAG",
+"sources": ["jquery.simple-carousel.scss"],
+"names": [],
+"file": "jquery.simple-carousel.css"
+}

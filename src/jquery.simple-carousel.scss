@@ -1,0 +1,24 @@
+.simple-carousel-container {
+  position: relative;
+
+  .simple-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    .simple-carousel-elements {
+      position: absolute;
+    }
+  }
+
+  .simple-carousel-left, .simple-carousel-right {
+    position: absolute;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    &.disabled {
+      opacity: 0.5;
+    }
+  }
+}

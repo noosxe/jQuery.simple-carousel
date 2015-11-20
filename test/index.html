@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../src/jquery.simple-carousel.css">
+  <style>
+    .parent {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .my-carousel {
+      display: flex;
+      background: black;
+      overflow: hidden;
+    }
+
+    .my-carousel a {
+      display: inline-block;
+      line-height: 0;
+    }
+
+    .my-carousel img {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+
+
+    <div class="my-carousel">
+      <a href="#"><img src="images/1.jpg"></a>
+      <a href="#"><img src="images/2.jpg"></a>
+      <a href="#"><img src="images/3.jpg"></a>
+      <a href="#"><img src="images/4.jpg"></a>
+      <a href="#"><img src="images/5.jpg"></a>
+      <a href="#"><img src="images/6.jpg"></a>
+      <a href="#"><img src="images/7.jpg"></a>
+      <a href="#"><img src="images/8.jpg"></a>
+    </div>
+
+
+
+  </div>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="../src/jquery.simple-carousel.js"></script>
+  <script>
+    $(function() {
+      $('.my-carousel').simpleCarousel();
+    });
+  </script>
+</body>
+</html>

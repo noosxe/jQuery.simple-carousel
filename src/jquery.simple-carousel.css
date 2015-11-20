@@ -1,0 +1,17 @@
+.simple-carousel-container {
+  position: relative; }
+  .simple-carousel-container .simple-carousel-wrapper {
+    position: relative;
+    overflow: hidden; }
+    .simple-carousel-container .simple-carousel-wrapper .simple-carousel-elements {
+      position: absolute; }
+  .simple-carousel-container .simple-carousel-left, .simple-carousel-container .simple-carousel-right {
+    position: absolute;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; }
+    .simple-carousel-container .simple-carousel-left.disabled, .simple-carousel-container .simple-carousel-right.disabled {
+      opacity: 0.5; }
+
+/*# sourceMappingURL=jquery.simple-carousel.css.map */
