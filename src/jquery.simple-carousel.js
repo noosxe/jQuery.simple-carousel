@@ -19,6 +19,7 @@ if (typeof Object.create !== "function") {
   var SimpleCarousel = {
     init: function(options, el) {
       this.$elem = $(el);
+      this.$items = $(el).children();
       this.load();
     },
 
@@ -74,14 +75,53 @@ if (typeof Object.create !== "function") {
         container.prepend(leftButton);
         container.append(rightButton);
       }
+
+      this.contentWidth = width;
+      this.wrapperWidth = wrapperWidth;
     },
 
     prev: function() {
+      var currentX = Math.abs(this.$elem.position().left);
+      var toGo = null;
 
+      $(this.$items.get().reverse()).each(function() {
+        var posX = $(this).position().left;
+
+        if (posX < currentX) {
+          toGo = -posX;
+          return false;
+        }
+      });
+
+      this.$elem.animate({
+        left: toGo
+      }, function() {
+
+      });
     },
 
     next: function() {
+      var currentX = Math.abs(this.$elem.position().left);
+      var toGo = null;
 
+      this.$items.each(function() {
+        var posX = $(this).position().left;
+
+        if (posX > currentX) {
+          toGo = -posX;
+          return false;
+        }
+      });
+
+      var maxLeft = this.wrapperWidth - this.contentWidth;
+
+      toGo = Math.max(toGo, maxLeft);
+
+      this.$elem.animate({
+        left: toGo
+      }, function() {
+
+      });
     }
   };
 
